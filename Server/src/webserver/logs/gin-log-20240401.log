@@ -1,0 +1,853 @@
+[2024-04-01 10:11:13] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 10:11:13] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 10:11:13] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:3ms
+[2024-04-01 11:01:57] [info] Gin log method:POST , path:/admin/register , status:404 , tc:0ms
+[2024-04-01 11:02:47] [info] Gin log method:POST , path:/admin/register , status:200 , tc:0ms
+[2024-04-01 11:03:44] [info] Gin log method:POST , path:/admin/register , status:200 , tc:8ms
+[2024-04-01 11:14:52] [info] Gin log method:POST , path:/admin/login , status:200 , tc:1ms
+[2024-04-01 11:17:08] [info] Gin log method:POST , path:/admin/login , status:200 , tc:1ms
+[2024-04-01 11:22:36] [info] Gin log method:POST , path:/admin/login , status:200 , tc:1ms
+[2024-04-01 11:23:25] [info] Gin log method:POST , path:/admin/login , status:200 , tc:1ms
+[2024-04-01 11:31:57] [info] Gin log method:POST , path:/admin/login , status:200 , tc:2ms
+[2024-04-01 11:34:26] [info] Gin log method:POST , path:/admin/login , status:200 , tc:2ms
+[2024-04-01 16:58:26] [info] Gin log method:POST , path:/user/login , status:200 , tc:3ms
+[2024-04-01 17:00:03] [info] Gin log method:GET , path:/api/record/recordlist , status:200 , tc:1ms
+[2024-04-01 17:04:31] [info] Gin log method:POST , path:/user/login , status:200 , tc:13ms
+[2024-04-01 17:05:34] [info] Gin log method:OPTIONS , path:/api/record/recordlist , status:204 , tc:0ms
+[2024-04-01 17:05:34] [info] Gin log method:GET , path:/api/record/recordlist , status:200 , tc:1ms
+[2024-04-01 17:15:22] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 17:20:58] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 17:22:07] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 17:22:07] [info] Gin log method:GET , path:/api/record/recordlist?page=1&perPage=10 , status:200 , tc:2ms
+[2024-04-01 17:22:11] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 17:23:34] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 17:23:34] [info] Gin log method:GET , path:/api/record/recordlist?page=1&perPage=10 , status:200 , tc:1ms
+[2024-04-01 17:23:48] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 17:28:07] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 17:28:07] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 17:28:24] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 17:28:53] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 17:28:53] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:8ms
+[2024-04-01 17:29:06] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 17:29:44] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 17:29:44] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 17:29:57] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 18:35:58] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 18:35:58] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 18:36:40] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 18:36:53] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 18:36:53] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 18:36:55] [info] Gin log method:POST , path:/api/record/cancelorder , status:401 , tc:0ms
+[2024-04-01 18:37:04] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 18:37:37] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 18:37:57] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 18:37:57] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 18:38:02] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 18:38:02] [error] [record not found]
+[2024-04-01 18:38:02] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:13ms
+[2024-04-01 18:38:33] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 18:38:33] [error] [record not found]
+[2024-04-01 18:38:33] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:15ms
+[2024-04-01 19:02:05] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 19:02:05] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:12ms
+[2024-04-01 19:03:46] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:03:47] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:03:47] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 19:03:53] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:03:54] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:03:54] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 19:13:07] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:15:08] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:15:08] [info] Gin log method:POST , path:/user/login , status:200 , tc:2ms
+[2024-04-01 19:15:19] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:15:19] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:15:27] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:15:27] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:15:35] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:15:35] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:15:36] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:15:36] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:15:37] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:15:37] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:15:38] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:15:46] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:15:46] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:15:56] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:15:56] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:15:58] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 19:15:58] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:15:58] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:15:58] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:2ms
+[2024-04-01 19:16:12] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 19:16:12] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:16ms
+[2024-04-01 19:16:18] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:16:18] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 19:26:24] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:401 , tc:0ms
+[2024-04-01 19:26:30] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:401 , tc:0ms
+[2024-04-01 19:26:36] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:401 , tc:0ms
+[2024-04-01 19:27:07] [info] Gin log method:GET , path:/api/record/recordlist?_ijt=sd3tr57vmr0223e5udqq7b2443&_ij_reload=RELOAD_ON_SAVE&page=1 , status:401 , tc:0ms
+[2024-04-01 19:29:10] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:29:10] [info] Gin log method:POST , path:/user/login , status:200 , tc:2ms
+[2024-04-01 19:29:13] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:29:13] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:29:21] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:29:21] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:29:24] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:29:24] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:29:25] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:29:27] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:29:27] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:29:33] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 19:29:33] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:17ms
+[2024-04-01 19:29:33] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:29:33] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:3ms
+[2024-04-01 19:31:30] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:31:30] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:31:32] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:31:32] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:31:32] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:31:32] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:31:40] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 19:31:40] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:15ms
+[2024-04-01 19:32:22] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:32:33] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=&$$id=f9abbfb6d4e1 , status:204 , tc:0ms
+[2024-04-01 19:33:18] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=&$$id=18d23b2d6d35 , status:204 , tc:0ms
+[2024-04-01 19:34:28] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:34:28] [info] Gin log method:POST , path:/user/login , status:200 , tc:9ms
+[2024-04-01 19:34:39] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:34:39] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:34:42] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 19:36:50] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:36:50] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 19:36:52] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:36:52] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:36:55] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:36:55] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:36:55] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:9ms
+[2024-04-01 19:36:59] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 19:36:59] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:36:59] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:2ms
+[2024-04-01 19:37:04] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:37:04] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:37:08] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:37:08] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:37:08] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:37:08] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:0ms
+[2024-04-01 19:37:10] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:37:10] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:37:29] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=cc2d03c3f099 , status:401 , tc:0ms
+[2024-04-01 19:37:37] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=cc2d03c3f099 , status:401 , tc:0ms
+[2024-04-01 19:38:52] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:38:52] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 19:38:54] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:38:54] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:38:56] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:38:56] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:38:56] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:38:56] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:39:04] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 19:39:04] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:14ms
+[2024-04-01 19:39:04] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:39:04] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:39:07] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:39:07] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:39:07] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:3ms
+[2024-04-01 19:39:15] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:39:15] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:39:16] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:39:16] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:39:16] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:39:16] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:39:36] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=76c8749db733 , status:401 , tc:0ms
+[2024-04-01 19:47:17] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:47:17] [info] Gin log method:POST , path:/user/login , status:200 , tc:19ms
+[2024-04-01 19:47:18] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:47:18] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:47:20] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:47:20] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:47:20] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:47:20] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:47:32] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 19:47:33] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:47:33] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:47:35] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:47:35] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:47:35] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:47:35] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:47:41] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:47:41] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:47:42] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:47:42] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:47:42] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:47:42] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:52:14] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=8c497dc0bc73 , status:401 , tc:0ms
+[2024-04-01 19:54:33] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:401 , tc:0ms
+[2024-04-01 19:54:35] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:401 , tc:0ms
+[2024-04-01 19:56:06] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:56:06] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 19:56:22] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 19:56:22] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 19:56:27] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:56:27] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 19:56:28] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 19:57:09] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 19:57:09] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 19:57:14] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:57:14] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:57:14] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:57:14] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:57:21] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 19:57:21] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:57:21] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 19:57:21] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 19:57:52] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=f1134f6deb47 , status:401 , tc:0ms
+[2024-04-01 20:07:10] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:07:10] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:07:11] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:07:11] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:07:11] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:07:11] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:07:19] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 20:07:19] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:12ms
+[2024-04-01 20:07:20] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:07:20] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:07:22] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:07:22] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:07:22] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:4ms
+[2024-04-01 20:07:37] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:07:37] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:07:37] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:07:37] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:0ms
+[2024-04-01 20:08:56] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=70d6b0c9e177 , status:401 , tc:0ms
+[2024-04-01 20:09:26] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=70d6b0c9e177 , status:401 , tc:0ms
+[2024-04-01 20:10:51] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:10:51] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:10:52] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:10:52] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:10:52] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:10:52] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:2ms
+[2024-04-01 20:10:56] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:10:56] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:3ms
+[2024-04-01 20:11:09] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 20:11:09] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:16ms
+[2024-04-01 20:11:10] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:11:10] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:11:12] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:11:12] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:11:13] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:11:13] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:13] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:13] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:11:17] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:17] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:17] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:11:24] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:11:24] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:24] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:24] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 20:11:46] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:11:46] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:46] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:46] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 20:11:48] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:11:48] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:11:56] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 20:11:56] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:13ms
+[2024-04-01 20:11:56] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:11:56] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:3ms
+[2024-04-01 20:11:57] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:11:57] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:11:58] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:11:58] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:58] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:11:58] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:12:05] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:12:05] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:05] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:05] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 20:12:08] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:12:08] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:12:12] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 20:12:12] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:8ms
+[2024-04-01 20:12:12] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:12:16] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:12:16] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:12:17] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:12:17] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:17] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:17] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:0ms
+[2024-04-01 20:12:20] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:12:20] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:20] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:20] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 20:12:24] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:12:24] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:12:28] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:12:28] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:12:29] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:12:29] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:29] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:12:29] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:2ms
+[2024-04-01 20:12:59] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:12:59] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:13:01] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:13:01] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:13:01] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:13:01] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:0ms
+[2024-04-01 20:23:26] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 20:23:26] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 20:23:29] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:23:29] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:23:30] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:23:30] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:23:33] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:23:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:23:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:23:33] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:23:37] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:23:37] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:23:37] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:23:37] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 20:23:50] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 20:23:50] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:13ms
+[2024-04-01 20:24:05] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:24:05] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:24:13] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:24:13] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:24:13] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:24:13] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:25:04] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 20:25:04] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:19ms
+[2024-04-01 20:25:05] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:25:05] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:26:04] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:26:04] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:26:10] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:26:10] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:26:11] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:26:11] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:26:11] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:4ms
+[2024-04-01 20:26:25] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 20:26:25] [info] deleteBookedCache  id = [3 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 20:26:25] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:8ms
+[2024-04-01 20:26:29] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:26:29] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:40:37] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=e5e94bed6cfe , status:401 , tc:0ms
+[2024-04-01 20:40:55] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=e5e94bed6cfe , status:401 , tc:0ms
+[2024-04-01 20:44:56] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=0fea02175e28 , status:401 , tc:0ms
+[2024-04-01 20:46:10] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 20:46:10] [info] Gin log method:POST , path:/user/login , status:200 , tc:8ms
+[2024-04-01 20:46:12] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:46:12] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:46:13] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:46:13] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:46:13] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:46:13] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:46:16] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:46:16] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:46:20] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 20:46:20] [info] deleteBookedCache  id = [6 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 20:46:20] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:8ms
+[2024-04-01 20:46:21] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:46:21] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:46:22] [info] deleteBookedCache  id = [9 %!d(string=2024-04-02)], date = %!s(MISSING)
+
+[2024-04-01 20:46:22] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:16ms
+[2024-04-01 20:46:23] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:46:24] [info] deleteBookedCache  id = [10 %!d(string=2024-04-02)], date = %!s(MISSING)
+
+[2024-04-01 20:46:24] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:8ms
+[2024-04-01 20:46:25] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:46:27] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 20:46:27] [info] deleteBookedCache  id = [12 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 20:46:27] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:8ms
+[2024-04-01 20:46:27] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:46:27] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 20:46:29] [info] deleteBookedCache  id = [15 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 20:46:29] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:7ms
+[2024-04-01 20:46:30] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:46:32] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:46:32] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:46:33] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:46:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:46:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:46:33] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:0ms
+[2024-04-01 20:46:39] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:46:39] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:46:39] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:46:39] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:46:41] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 20:46:41] [info] deleteBookedCache  id = [1 %!d(string=2024-04-02)], date = %!s(MISSING)
+
+[2024-04-01 20:46:41] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:7ms
+[2024-04-01 20:46:45] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:46:45] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:47:11] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:47:11] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:47:17] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:47:17] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:47:17] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:9ms
+[2024-04-01 20:55:42] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:55:42] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:55:42] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:9ms
+[2024-04-01 20:56:00] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:56:00] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 20:56:10] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:56:10] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 20:56:13] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:56:13] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:56:13] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:56:13] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 20:56:19] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 20:56:19] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:56:19] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:56:19] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 20:56:33] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 20:56:33] [info] deleteBookedCache  id = [3 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 20:56:33] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:14ms
+[2024-04-01 20:56:50] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 20:56:50] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 20:56:50] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:3ms
+[2024-04-01 20:56:55] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 20:56:55] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:3ms
+[2024-04-01 21:00:03] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:00:03] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:3ms
+[2024-04-01 21:00:07] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 21:00:07] [info] deleteBookedCache  id = [17 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 21:00:07] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:9ms
+[2024-04-01 21:00:08] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 21:00:09] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:00:09] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:00:12] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:00:12] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:00:12] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:00:12] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 21:00:17] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:00:17] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:00:20] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:00:20] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:00:22] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:00:22] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:00:22] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:00:22] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 21:01:11] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:01:11] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:01:11] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:01:11] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:0ms
+[2024-04-01 21:01:16] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:01:16] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:01:16] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:01:16] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:0ms
+[2024-04-01 21:01:18] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 21:01:18] [info] deleteBookedCache  id = [3 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 21:01:18] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:13ms
+[2024-04-01 21:01:30] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:01:30] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:01:46] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:01:46] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:01:53] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:01:53] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:01:53] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:2ms
+[2024-04-01 21:02:27] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:02:27] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:02:30] [info] Gin log method:OPTIONS , path:/api/record/cancelorder , status:204 , tc:0ms
+[2024-04-01 21:02:30] [info] deleteBookedCache  id = [16 %!d(string=2024-04-02)], date = %!s(MISSING)
+
+[2024-04-01 21:02:30] [info] Gin log method:POST , path:/api/record/cancelorder , status:200 , tc:13ms
+[2024-04-01 21:02:30] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:02:32] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:02:32] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:02:33] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:02:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:02:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:02:33] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 21:02:53] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:02:53] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:02:53] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:02:53] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:0ms
+[2024-04-01 21:03:29] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:03:29] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:3ms
+[2024-04-01 21:03:31] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:03:31] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:03:33] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:03:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:03:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:03:33] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:0ms
+[2024-04-01 21:03:36] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:03:36] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:03:36] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 21:03:38] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 21:03:38] [info] deleteBookedCache  id = [3 %!d(string=2024-04-02)], date = %!s(MISSING)
+
+[2024-04-01 21:03:38] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:13ms
+[2024-04-01 21:03:42] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:03:42] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:03:56] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:03:56] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:03:57] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:03:57] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:03:57] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:2ms
+[2024-04-01 21:04:13] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:04:13] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:04:21] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:04:21] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:04:32] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=&$$id=2e6d2acc3c1a , status:401 , tc:0ms
+[2024-04-01 21:06:06] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 21:06:06] [info] Gin log method:POST , path:/user/login , status:200 , tc:2ms
+[2024-04-01 21:06:08] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:06:08] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:06:14] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:06:14] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 21:06:15] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:06:15] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:06:16] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 21:06:16] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:06:16] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:06:16] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:0ms
+[2024-04-01 21:06:58] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 21:06:58] [info] deleteBookedCache  id = [1 %!d(string=2024-04-01)], date = %!s(MISSING)
+
+[2024-04-01 21:06:58] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:7ms
+[2024-04-01 21:07:03] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:07:03] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 21:07:05] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:07:05] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:07:07] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 21:07:07] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:07:07] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:10ms
+[2024-04-01 21:07:26] [info] Gin log method:OPTIONS , path:/api/stadium/order , status:204 , tc:0ms
+[2024-04-01 21:07:26] [info] deleteBookedCache  id = [1 %!d(string=2024-04-02)], date = %!s(MISSING)
+
+[2024-04-01 21:07:26] [info] Gin log method:POST , path:/api/stadium/order , status:200 , tc:7ms
+[2024-04-01 21:07:29] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:07:29] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:07:29] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:07:29] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:07:30] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:07:31] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:07:33] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=3 , status:204 , tc:0ms
+[2024-04-01 21:07:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:07:33] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:07:33] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=3 , status:200 , tc:1ms
+[2024-04-01 21:07:35] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 21:07:35] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:07:35] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:9ms
+[2024-04-01 21:07:40] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:07:40] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:07:40] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:07:40] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:07:43] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:17:37] [info] Gin log method:POST , path:/admin/login , status:200 , tc:3ms
+[2024-04-01 21:20:16] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:20:16] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:20:18] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:20:18] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:20:19] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:20:20] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:20:20] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:20:21] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:20:22] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:20:22] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:20:44] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:20:44] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 21:20:47] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:20:47] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:20:48] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:20:49] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:20:50] [info] Gin log method:OPTIONS , path:/api/stadium/allowabletimes?ID=1 , status:204 , tc:0ms
+[2024-04-01 21:20:50] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:20:50] [error] getStadiumBooked err = [<nil>]
+
+[2024-04-01 21:20:50] [info] Gin log method:GET , path:/api/stadium/allowabletimes?ID=1 , status:200 , tc:1ms
+[2024-04-01 21:20:54] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:20:54] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:20:56] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:21:00] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:21:00] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:21:16] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 21:21:16] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 21:21:18] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:21:18] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:21:19] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:21:19] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:21:20] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:21:20] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:21:23] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:21:24] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:21:24] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:24:01] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:24:01] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:24:07] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:24:07] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 21:24:08] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 21:24:08] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 21:47:10] [info] Gin log method:GET , path:/user/userinfo , status:401 , tc:0ms
+[2024-04-01 21:47:28] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 21:47:38] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 21:49:07] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 21:49:07] [error] [0xc0003026c0]
+[2024-04-01 21:49:07] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 21:50:11] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 21:50:11] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 21:50:19] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 21:50:19] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 21:50:19] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 21:50:19] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 21:50:21] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 21:50:24] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 21:50:24] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:3ms
+[2024-04-01 22:01:41] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:01:41] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:2ms
+[2024-04-01 22:02:40] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:02:40] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:2ms
+[2024-04-01 22:02:48] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:02:48] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:3ms
+[2024-04-01 22:03:32] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:03:32] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:8ms
+[2024-04-01 22:04:59] [info] Gin log method:OPTIONS , path:/user/userinfo?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 22:09:03] [info] Gin log method:GET , path:/user/userinfo , status:401 , tc:0ms
+[2024-04-01 22:09:21] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:09:21] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:09:48] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:09:51] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:09:51] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:09:55] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:11:13] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 22:11:13] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 22:11:15] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:11:15] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:11:16] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:11:16] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 22:11:39] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 22:11:39] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 22:11:40] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:11:40] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:11:43] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:11:43] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 22:11:58] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:11:58] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:13:18] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:13:18] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:13:32] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:13:32] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 22:13:33] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:13:33] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:13:35] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:13:35] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:14:11] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 22:14:11] [info] Gin log method:POST , path:/user/login , status:200 , tc:2ms
+[2024-04-01 22:17:10] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 22:17:10] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 22:17:16] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 22:17:16] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 22:19:31] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:19:31] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:19:32] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:19:32] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 22:19:35] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:19:35] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:19:38] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:19:38] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 22:19:38] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:19:38] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:19:47] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:19:47] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 22:19:47] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:19:47] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:21:42] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:21:42] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:21:44] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:21:44] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:21:45] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:22:07] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:22:07] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:22:16] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:22:16] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 22:22:17] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:22:17] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:22:54] [info] Gin log method:OPTIONS , path:/user/login , status:204 , tc:0ms
+[2024-04-01 22:22:54] [info] Gin log method:POST , path:/user/login , status:200 , tc:1ms
+[2024-04-01 22:29:41] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:29:41] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:29:43] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:29:43] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:2ms
+[2024-04-01 22:29:44] [info] Gin log method:OPTIONS , path:/user/userinfo , status:204 , tc:0ms
+[2024-04-01 22:29:44] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:29:45] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:29:45] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 22:29:46] [info] Gin log method:GET , path:/user/userinfo , status:200 , tc:1ms
+[2024-04-01 22:29:48] [info] Gin log method:OPTIONS , path:/api/record/recordlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:29:48] [info] Gin log method:GET , path:/api/record/recordlist?page=1 , status:200 , tc:1ms
+[2024-04-01 22:30:00] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:30:00] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:30:07] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1 , status:204 , tc:0ms
+[2024-04-01 22:30:07] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 22:30:12] [info] Gin log method:GET , path:/api/stadiumlist?page=1 , status:200 , tc:0ms
+[2024-04-01 23:24:03] [info] Gin log method:POST , path:/user/login , status:200 , tc:32ms
+[2024-04-01 23:24:23] [info] Gin log method:OPTIONS , path:/api/stadiumlist , status:204 , tc:0ms
+[2024-04-01 23:24:23] [info] Gin log method:GET , path:/api/stadiumlist , status:200 , tc:0ms
+[2024-04-01 23:26:40] [info] Gin log method:POST , path:/admin/login , status:200 , tc:10ms
+[2024-04-01 23:27:00] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:28:52] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:28:52] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:29:07] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:29:07] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:27ms
+[2024-04-01 23:29:07] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:29:07] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:33:35] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:33:37] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:33:37] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:33:44] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:33:44] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:8ms
+[2024-04-01 23:33:58] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:34:50] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:34:50] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:34:54] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:34:54] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:1ms
+[2024-04-01 23:35:10] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:35:10] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:1ms
+[2024-04-01 23:35:43] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:39:15] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:39:15] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:39:21] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:39:21] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:1ms
+[2024-04-01 23:39:25] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:8ms
+[2024-04-01 23:39:41] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:40:32] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:40:32] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:40:37] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:40:37] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:1ms
+[2024-04-01 23:40:41] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:1ms
+[2024-04-01 23:40:49] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:43:04] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:43:04] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:43:09] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:43:09] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:1ms
+[2024-04-01 23:43:11] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:1ms
+[2024-04-01 23:43:21] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:43:53] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:43:53] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:43:58] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:43:58] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:7ms
+[2024-04-01 23:43:58] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:44:07] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:44:47] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:44:47] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:44:50] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:44:53] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:46:44] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:46:44] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:46:47] [info] Gin log method:OPTIONS , path:/api/deletestadium , status:204 , tc:0ms
+[2024-04-01 23:46:47] [info] Gin log method:POST , path:/api/deletestadium , status:200 , tc:6ms
+[2024-04-01 23:46:47] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:47:13] [info] Gin log method:OPTIONS , path:/api/deletestadium , status:204 , tc:0ms
+[2024-04-01 23:47:13] [info] Gin log method:POST , path:/api/deletestadium , status:200 , tc:8ms
+[2024-04-01 23:47:13] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:47:13] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:47:20] [info] Gin log method:OPTIONS , path:/api/addstadium , status:204 , tc:0ms
+[2024-04-01 23:47:20] [info] Gin log method:POST , path:/api/addstadium , status:200 , tc:5ms
+[2024-04-01 23:47:20] [info] Gin log method:OPTIONS , path:/api/stadiumlist?page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:47:20] [info] Gin log method:GET , path:/api/stadiumlist?page=1&perPage=10 , status:200 , tc:0ms
+[2024-04-01 23:47:23] [info] Gin log method:OPTIONS , path:/api/stadiumlist?ID=2&page=1&perPage=10 , status:204 , tc:0ms
+[2024-04-01 23:47:23] [info] Gin log method:GET , path:/api/stadiumlist?ID=2&page=1&perPage=10 , status:200 , tc:0ms

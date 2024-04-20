@@ -1,0 +1,4 @@
+[2024-04-14 21:24:57] [info] Gin log method:POST , path:/user/login , status:200 , tc:3ms
+[2024-04-14 21:25:23] [info] Gin log method:GET , path:/api/game/gamelist , status:200 , tc:0ms
+[2024-04-14 21:25:55] [info] Gin log method:GET , path:/api/game/gamelist , status:200 , tc:0ms
+[2024-04-14 21:26:42] [info] Gin log method:GET , path:/api/game/gamelist , status:200 , tc:1ms

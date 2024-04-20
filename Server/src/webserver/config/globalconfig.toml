@@ -1,0 +1,28 @@
+# 全局配置文件
+
+# 服务器Addr  ip:port
+# Addr = "localhost:8080"
+
+# Gin运行模式 debug release test
+Mod = "debug"
+Secret = "yjh666"
+LogPath = "../../webserver/logs"
+# 日志级别 panic, fatal, error, warn, info, debug, trace
+LogLevel = "info"
+# 允许访问的域名配置
+AllowOrigins = ["http://localhost", "http://localhost:63342"]
+
+[MySQLConf]
+UserName = "root"
+Password = "system"
+Protocol = "tcp"
+Address  = "192.168.201.1:3306"
+DBName   = "stadium"
+Charset  = "utf8"
+
+[RedisConf]
+Address      = "192.168.201.159:6379"
+Password     = ""
+DB           = 0
+PoolSize     = 15
+MinIdleConns = 10
