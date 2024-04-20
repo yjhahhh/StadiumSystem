@@ -10,7 +10,6 @@ import (
 func InitModel() {
 	adminlogin.Init()
 	userlogin.Init()
-	stadium.InitBooked()
 	stadium.InitRecord()
 	stadium.InitStadium()
 	game.InitGame()

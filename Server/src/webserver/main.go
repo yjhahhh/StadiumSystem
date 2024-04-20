@@ -7,11 +7,13 @@ import(
 	"common/redis"
 	"common/manager"
 	"common/log"
+	"common/utils/timeutils"
 	"webserver/router"
 )
 
 func main() {
 	config.InitGlobalConfig()
+	timeutils.InitTimeUtils()
 	connection.InitMySQL()
 	model.InitModel()
 	manager.InitManager()

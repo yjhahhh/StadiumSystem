@@ -10,38 +10,34 @@ import (
 	"common/model/stadium"
 	"common/redis"
 	"common/model/game"
+	"common/utils/timeutils"
 
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )
 
-// 时段表
-var timeTable []string
-
-func InitTimetable() {
-	timeTable = []string{"07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30"}
-}
 
 const (
-	IsBoked   = "true"
-	IsIdle    = "false"
-	OrderFail = "order fail"
-	layout    = "2006-01-02 15:04"
+	IsBoked        = "true"
+	IsIdle         = "false"
+	OrderFail      = "order fail"
+	layoutDateTime = "2006-01-02 15:04"
+	layoutDate     = "2006-01-02"
 )
 
 // 起始时间返回时间段表
 func GetTimes(start, end string) []string {
 	flag := false
 	ret := make([]string, 0)
-	for i := range timeTable {
-		if timeTable[i] == start {
+	for i := range timeutils.TimeTable {
+		if timeutils.TimeTable[i] == start {
 			flag = true
 		}
-		if timeTable[i] == end {
+		if timeutils.TimeTable[i] == end {
 			break
 		}
 		if flag {
-			ret = append(ret, timeTable[i])
+			ret = append(ret, timeutils.TimeTable[i])
 		}
 	}
 	return ret
@@ -49,19 +45,11 @@ func GetTimes(start, end string) []string {
 
 // 返回全部时段
 func GetAllTimes(id uint, date string) stadium.BookedTime {
-	ret := make(stadium.BookedTime)
-	for i := range timeTable {
-		ret[timeTable[i]] = IsIdle
-	}
-	booked, err := getStadiumBooked(id, date)
-	log.Debugf("GetAllTimes id = %d, date = %s, booked : %+v\n", id, date, booked)
+	times, err := getStadiumBooked(id, date)
 	if err != nil {
-		log.Debug(err)
+		log.Error(err)
 	}
-	for k := range booked {
-		ret[k] = IsBoked
-	}
-	return ret
+	return times
 }
 
 // 返回体育馆当前日期的已预约时段   获取缓存
@@ -75,13 +63,11 @@ func getStadiumBooked(id uint, date string) (stadium.BookedTime, error) {
 		all, err := redis.HGetAll(getStadiumKey(id, date))
 		log.Errorf("getStadiumBooked err = %s\n", err)
 		if err != nil {
-			log.Debug("从DB获取")
 			// 从DB获取
 			return loadIdlesCache(id, date)
 		}
 		return all, nil
 	}
-	log.Debugf("key = %s not exists\n", getStadiumKey(id, date))
 	return loadIdlesCache(id, date)
 }
 
@@ -89,13 +75,13 @@ func getStadiumBooked(id uint, date string) (stadium.BookedTime, error) {
 func GetAllowableTimes(query *IdleTimeQuery) ([]IdleTimes, int) {
 	now := time.Now()
 	nextDay := now.AddDate(0, 0, 1)
-	today := now.Format(layout)
-	tomorrow := nextDay.Format(layout)
+	today := now.Format(layoutDate)
+	tomorrow := nextDay.Format(layoutDate)
 	ret := make([]IdleTimes, 0)
 	todayBooked := GetAllTimes(query.StadiumID, today)
 	tomorrowBooked := GetAllTimes(query.StadiumID, tomorrow)
-	ret = append(ret, allTimes2IdleTimes(query.StadiumID, today, todayBooked)...)
-	ret = append(ret, allTimes2IdleTimes(query.StadiumID, tomorrow, tomorrowBooked)...)
+	ret = append(ret, allTimes2IdleTimes(query.StadiumID, today, todayBooked, true)...)
+	ret = append(ret, allTimes2IdleTimes(query.StadiumID, tomorrow, tomorrowBooked, false)...)
 	start := query.PerPage * (query.Page - 1)
 	end := start + query.PerPage
 	if start >= len(ret) {
@@ -108,11 +94,24 @@ func GetAllowableTimes(query *IdleTimeQuery) ([]IdleTimes, int) {
 }
 
 // 转换可预约时段
-func allTimes2IdleTimes(id uint, date string, all stadium.BookedTime) []IdleTimes {
+func allTimes2IdleTimes(id uint, date string, all stadium.BookedTime, today bool) []IdleTimes {
 	ret := make([]IdleTimes, 0)
 	flag := false
 	var start string
-	for _, t := range timeTable {
+	for _, t := range timeutils.TimeTable {
+		if today {
+			isBefore, err := timeutils.IsNowBefore(t)
+			if err != nil {
+				log.Error(err)
+				continue
+			}
+			if !isBefore {
+				continue
+			} else {
+				today = false
+			}
+		}
+		
 		if all[t] == IsIdle {
 			if !flag {
 				start = t
@@ -129,7 +128,7 @@ func allTimes2IdleTimes(id uint, date string, all stadium.BookedTime) []IdleTime
 			}
 		}
 	}
-	end := timeTable[len(timeTable)-1]
+	end := timeutils.TimeTable[len(timeutils.TimeTable)-1]
 	if flag && start != end {
 		ret = append(ret, IdleTimes{
 			Date:  date,
@@ -142,7 +141,7 @@ func allTimes2IdleTimes(id uint, date string, all stadium.BookedTime) []IdleTime
 
 // 加载缓存
 func loadIdlesCache(id uint, date string) (stadium.BookedTime, error) {
-	ret, err := getStadiumBookedFromDB(id, date)
+	ret, err := getStadiumTimetableFromDB(id, date)
 	if err != nil {
 		return nil, err
 	}
@@ -163,20 +162,33 @@ func DeleteBookedCache(id uint, date string) error {
 	return redis.Del(getStadiumKey(id, date))
 }
 
-// 从数据库获取体育馆当前日期的已预约时段
-func getStadiumBookedFromDB(id uint, date string) (stadium.BookedTime, error) {
-	var stadiumIdle stadium.StadiumBooked
-	err := connection.GetDB().Where(&stadium.StadiumBooked{StadiumId: id, Date: date}).First(&stadiumIdle).Error
-	if err != nil && err != gorm.ErrRecordNotFound {
+// 从数据库获取体育馆当前日期的时段表
+func getStadiumTimetableFromDB(id uint, date string) (stadium.BookedTime, error) {
+	var sta stadium.Stadium
+	err := connection.GetDB().First(&sta, id).Error
+	if err != nil {
 		return nil, err
 	}
-	if err == gorm.ErrRecordNotFound {
-		stadiumIdle.StadiumId = id
-		stadiumIdle.Date = date
-		stadiumIdle.BookedTimes = make(stadium.BookedTime)
-		err = connection.GetDB().Create(&stadiumIdle).Error
+	ret := make(stadium.BookedTime)
+	allTimes := GetTimes(sta.Start, sta.End)
+	for _, t := range allTimes {
+		ret[t] = IsIdle
 	}
-	return stadiumIdle.BookedTimes, err
+	records := make([]stadium.StadiumRecord, 0)
+	err = connection.GetDB().Where(&stadium.StadiumRecord {
+		StadiumId: id,
+		Date: date,
+	}).Find(&records).Error
+	if err != nil {
+		return ret, err
+	}
+	for _, record := range records {
+		times := GetTimes(record.Start, record.End)
+		for _, t := range times {
+			ret[t] = IsBoked
+		}
+	}
+	return ret, nil
 }
 
 // 获取redis键
@@ -203,38 +215,60 @@ func OrderStadium(parameter *OrderParameter) error {
 // 预约场馆事务
 func OrderStadiumTransaction(tx *gorm.DB, parameter *OrderParameter) (uint, error) {
 
-	var booked stadium.StadiumBooked
-	err := tx.Clauses(clause.Locking{Strength: "UPDATE"}).Where(&stadium.StadiumBooked{StadiumId: parameter.StadiumID, Date: parameter.Date}).First(&booked).Error
-	if err != nil && err != gorm.ErrRecordNotFound {
-		return 1, err
-	}
-	if err == gorm.ErrRecordNotFound {
-		booked.StadiumId = parameter.StadiumID
-		booked.Date = parameter.Date
-		booked.BookedTimes = make(stadium.BookedTime)
-	}
-	flag := true
-	times := GetTimes(parameter.Start, parameter.End)
-	for i := range times {
-		_, exists := booked.BookedTimes[times[i]]
-		if exists {
-			flag = false
-		}
-	}
-	if !flag {
-		return 1, fmt.Errorf(OrderFail)
-	}
-	for i := range times {
-		booked.BookedTimes[times[i]] = IsBoked
-	}
-	if err == gorm.ErrRecordNotFound {
-		err = tx.Create(&booked).Error
-	} else {
-		err = tx.Save(&booked).Error
-	}
+	// var booked stadium.StadiumBooked
+	// err := tx.Clauses(clause.Locking{Strength: "UPDATE"}).Where(&stadium.StadiumBooked{StadiumId: parameter.StadiumID, Date: parameter.Date}).First(&booked).Error
+	// if err != nil && err != gorm.ErrRecordNotFound {
+	// 	return 1, err
+	// }
+	// if err == gorm.ErrRecordNotFound {
+	// 	booked.StadiumId = parameter.StadiumID
+	// 	booked.Date = parameter.Date
+	// 	booked.BookedTimes = make(stadium.BookedTime)
+	// }
+	// flag := true
+	// times := GetTimes(parameter.Start, parameter.End)
+	// for i := range times {
+	// 	_, exists := booked.BookedTimes[times[i]]
+	// 	if exists {
+	// 		flag = false
+	// 	}
+	// }
+	// if !flag {
+	// 	return 1, fmt.Errorf(OrderFail)
+	// }
+	// for i := range times {
+	// 	booked.BookedTimes[times[i]] = IsBoked
+	// }
+	// if err == gorm.ErrRecordNotFound {
+	// 	err = tx.Create(&booked).Error
+	// } else {
+	// 	err = tx.Save(&booked).Error
+	// }
+	// if err != nil {
+	// 	return 1, err
+	// }
+	booked := make(stadium.BookedTime)
+	records := make([]stadium.StadiumRecord, 0)
+	err := tx.Where(&stadium.StadiumRecord {
+		StadiumId: parameter.StadiumID,
+		Date: parameter.Date,
+	}).Find(&records).Error
 	if err != nil {
 		return 1, err
 	}
+	for _, record := range records {
+		times := GetTimes(record.Start, record.End)
+		for _, t := range times {
+			booked[t] = IsBoked
+		}
+	}
+	times := GetTimes(parameter.Start, parameter.End)
+	for _, t := range times {
+		if booked[t] == IsBoked {
+			return 1, fmt.Errorf(OrderFail)
+		}
+	}
+
 	record := stadium.StadiumRecord {
 		StadiumId: parameter.StadiumID,
 		Date: parameter.Date,
@@ -243,7 +277,8 @@ func OrderStadiumTransaction(tx *gorm.DB, parameter *OrderParameter) (uint, erro
 		Start: parameter.Start,
 		End: parameter.End,
 	}
-	return record.ID, tx.Create(&record).Error
+	err = tx.Create(&record).Error
+	return record.ID, err
 }
 
 // 取消预约
@@ -282,20 +317,7 @@ func CancelOrderTransaction(tx *gorm.DB, id uint, record *stadium.StadiumRecord)
 	if err != nil {
 		return err
 	}
-	err = tx.Unscoped().Delete(&stadium.StadiumRecord{}, id).Error
-	if err != nil {
-		return err
-	}
-	var booked stadium.StadiumBooked
-	err = tx.Clauses(clause.Locking{Strength: "UPDATE"}).Where(&stadium.StadiumBooked{StadiumId: record.StadiumId, Date: record.Date}).First(&booked).Error
-	if err != nil {
-		return err
-	}
-	times := GetTimes(record.Start, record.End)
-	for i := range times {
-		delete(booked.BookedTimes, times[i])
-	}
-	return tx.Save(&booked).Error
+	return tx.Unscoped().Delete(&stadium.StadiumRecord{}, id).Error
 }
 
 // 获取用户预约记录
@@ -312,7 +334,7 @@ func GetOrderRecord(query *Paramter, outdate bool) ([]stadium.StadiumRecord, int
 	now := time.Now().Local()
 	records := make([]stadium.StadiumRecord, 0, len(ret))
 	for _, record := range ret {
-		t, err := time.ParseInLocation(layout, fmt.Sprintf("%s %s", record.Date, record.End), time.Local)
+		t, err := time.ParseInLocation(layoutDateTime, fmt.Sprintf("%s %s", record.Date, record.End), time.Local)
 		if err != nil {
 			return nil, 0, err
 		}

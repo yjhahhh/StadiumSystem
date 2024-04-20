@@ -1,11 +1,13 @@
 package stadiummanager
 
 import (
+	"fmt"
 	"strings"
 	"sync"
 
 	"common/connection"
 	"common/model/stadium"
+	"common/utils/timeutils"
 
 	"gorm.io/gorm"
 )
@@ -13,9 +15,10 @@ import (
 // type StadiumManager struct {
 var (
 	// CategoryList  []Category // 场馆分类列表
-	stadiumList []Stadium // 体育场馆列表
+	stadiumList []stadium.Stadium // 体育场馆列表
 	lock        sync.RWMutex
 )
+
 // }
 
 // var g_stadiumManager *StadiumManager
@@ -29,25 +32,17 @@ func Init() {
 }
 
 // 从数据库获取体育场列表
-func getStadiumFromDB() ([]Stadium, error) {
+func getStadiumFromDB() ([]stadium.Stadium, error) {
 	var stadiums []stadium.Stadium
 	err := connection.GetDB().Find(&stadiums).Error
 	if err != nil {
 		return nil, err
 	}
-	ret := make([]Stadium, 0, len(stadiums))
-	for i := range stadiums {
-		ret = append(ret, Stadium{
-			ID: stadiums[i].ID,
-			Name: stadiums[i].Name,
-			Category: stadiums[i].Category,
-		})
-	}
-	return ret, nil
+	return stadiums, nil
 }
 
 // 返回体育场馆列表
-func StadiumList(query StadiumQuery) ([]Stadium, int) {
+func StadiumList(query StadiumListParameter) ([]stadium.Stadium, int) {
 	lock.RLock()
 	defer lock.RUnlock()
 	start := query.PerPage * (query.Page - 1)
@@ -59,19 +54,19 @@ func StadiumList(query StadiumQuery) ([]Stadium, int) {
 		if end > len(stadiumList) {
 			end = len(stadiumList)
 		}
-		ret := make([]Stadium, end - start)
+		ret := make([]stadium.Stadium, end-start)
 		copy(ret, stadiumList[start:end])
 		return ret, len(stadiumList)
 	}
-	ret := make([]Stadium, 0, len(stadiumList))
+	ret := make([]stadium.Stadium, 0, len(stadiumList))
 	for i := range stadiumList {
 		if query.Name != "" && strings.Contains(stadiumList[i].Name, query.Name) {
 			ret = append(ret, stadiumList[i])
 		} else if query.Category != "" && strings.Contains(stadiumList[i].Category, query.Category) {
-			ret = append(ret, stadiumList[i]) 
+			ret = append(ret, stadiumList[i])
 		}
 	}
-	
+
 	if len(ret) < end {
 		end = len(ret)
 	}
@@ -79,10 +74,19 @@ func StadiumList(query StadiumQuery) ([]Stadium, int) {
 }
 
 // 添加体育场馆
-func AddStadium(name, category string) error {
-	stadium := stadium.Stadium {
-		Name: name,
-		Category: category,
+func AddStadium(parameter *StadiumParameter) error {
+	legal, err := timeutils.IsLegal(parameter.Start, parameter.End)
+	if err != nil {
+		return err
+	}
+	if !legal {
+		return fmt.Errorf("时间不合法")
+	}
+	stadium := stadium.Stadium{
+		Name:     parameter.Name,
+		Category: parameter.Category,
+		Start: parameter.Start,
+		End: parameter.End,
 	}
 	result := connection.GetDB().Create(&stadium)
 	if result.Error != nil {
@@ -90,11 +94,7 @@ func AddStadium(name, category string) error {
 	}
 	lock.Lock()
 	defer lock.Unlock()
-	stadiumList = append(stadiumList, Stadium{
-		ID: stadium.ID,
-		Name: stadium.Name,
-		Category: stadium.Category,
-	})
+	stadiumList = append(stadiumList, stadium)
 	return nil
 }
 
@@ -116,19 +116,31 @@ func DeleteStadium(id uint) error {
 }
 
 // 更新体育场馆
-func UpdateStadium(id uint, name string) error {
-	result := connection.GetDB().Model(&stadium.Stadium{Model: gorm.Model{ID: id}}).Update("Name", name)
+func UpdateStadium(parameter *UpdateParameter) error {
+	legal, err := timeutils.IsLegal(parameter.Start, parameter.End)
+	if err != nil {
+		return err
+	}
+	if !legal {
+		return fmt.Errorf("时间不合法")
+	}
+	result := connection.GetDB().Model(&stadium.Stadium{Model: gorm.Model{ID: parameter.ID}}).Updates(&stadium.Stadium {
+		Name: parameter.Name,
+		Start: parameter.Start,
+		End: parameter.End,
+	})
 	if result.Error != nil {
 		return result.Error
 	}
 	lock.Lock()
 	defer lock.Unlock()
 	for i := range stadiumList {
-		if stadiumList[i].ID == id {
-			stadiumList[i].Name = name
+		if stadiumList[i].ID == parameter.ID {
+			stadiumList[i].Name = parameter.Name
+			stadiumList[i].Start = parameter.Start
+			stadiumList[i].End = parameter.End
 			break
 		}
 	}
 	return nil
 }
-

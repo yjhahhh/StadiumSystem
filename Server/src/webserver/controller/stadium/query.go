@@ -10,6 +10,8 @@ type StadiumListQuery struct {
 type AddStadiumQuery struct {
 	Name     string `form:"name" binding:"required"`
 	Categoty string `form:"category" binding:"required"`
+	Start    string `form:"start" binding:"required"`
+	End      string `form:"end" binding:"required"`
 }
 
 type DeleteStadiumQuery struct {
@@ -17,6 +19,8 @@ type DeleteStadiumQuery struct {
 }
 
 type UpadateStadiumQuery struct {
-	ID   uint `form:"ID" binding:"required"`
-	Name string `form:"Name" binding:"required"`
+	ID    uint `form:"ID" binding:"required"`
+	Name  string `form:"name" binding:"required"`
+	Start string `form:"start" binding:"required"`
+	End   string `form:"end" binding:"required"`
 }

@@ -11,6 +11,8 @@ type Stadium struct {
 	gorm.Model
 	Name     string `gorm:"not null;unique"`
 	Category string `gorm:"not null"`
+	Start    string `gorm:"not null"`
+	End      string `gorm:"not null"`
 }
 
 func InitStadium() {
